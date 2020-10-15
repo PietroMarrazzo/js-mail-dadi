@@ -29,19 +29,21 @@ var emailInsert = prompt("Inserisci la tua Email").toLowerCase();
 // emails registered
 var emailsBox = ['marrazzo.pietroalfonso@gmail.com', 'laura.vallanzaghi@hotmail.it', 'lucrezia.nebboli@gmail.com', 'andrea.trevisani@gmail.com', 'castiglioni_fabio@gmail.com' ] ;
 
-// emails false
+// emails base false
 var emailFound = false;
-// autentication
+
+// autentication cycle
 for (var i = 0; i < emailsBox.length; i++) {
   var items = emailsBox[i];
-  console.log(items);
 
+  // email founded
   if (emailInsert == items) {
-    var emailFound = true;
+    emailFound = true;
   }
 }
 
-if (emailFound = true) {
+// sentence
+if (emailFound == true) {
   document.getElementById("accesso").innerHTML= 'logIn effettuato';
 }
 else {
