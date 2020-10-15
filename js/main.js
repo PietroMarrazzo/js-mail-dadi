@@ -24,7 +24,7 @@ if (dadoPlayer > dadoPC) {
 
 //AUTENTICAZIONE email
 // insert email
-var emailInsert = prompt("Inserisci la tua Email").toLowerCase();
+var emailInsert = prompt("Inserisci la tua Email").toLowerCase().trim();
 
 // emails registered
 var emailsBox = ['marrazzo.pietroalfonso@gmail.com', 'laura.vallanzaghi@hotmail.it', 'lucrezia.nebboli@gmail.com', 'andrea.trevisani@gmail.com', 'castiglioni_fabio@gmail.com' ] ;
